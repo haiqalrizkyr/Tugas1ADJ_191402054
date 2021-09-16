@@ -16,14 +16,14 @@ Karena saya tidak dapat melakukan instalasi menggunakan Docker Desktop maka saya
 Langkah Langkah membuat web statis menggunakan Docker<br>
 1. Pertama siapkan file html yang akan digunakan
 2. Lalu buat sebuah file tanpa ekstensi dengan nama Dockerfile
-3. Lalu pada Dockerfile isinya adalah 
-FROM nginx:alpine
-COPY . /usr/share/nginx/html
+3. Lalu pada Dockerfile isinya adalah <br>
+FROM nginx:alpine<br>
+COPY . /usr/share/nginx/html<br>
 4. Masukkan file html tadi beserta file Dockerfile ke satu folder
-5. Lalu buat docker image dengan mengetik 
-$ docker build -t namaimage .
-6. Kemudian untuk run docker container ketik
-$ docker run -p 80:80 namaimage
+5. Lalu buat docker image dengan mengetik <br>
+$ docker build -t namaimage . <br>
+6. Kemudian untuk run docker container ketik <br>
+$ docker run -p 80:80 namaimage <br>
 contoh :
 <br>![Screenshot (421)](https://user-images.githubusercontent.com/56826724/133606618-3b338368-e310-471b-a176-0db24a08af7d.png)</br>
 7. kemudian setelah berhasil buka link http://192.168.99.100/ maka web yang telah dibuat akan muncul
